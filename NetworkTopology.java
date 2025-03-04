@@ -193,14 +193,14 @@ class NetworkResult {
 }
 
 // GUI class for network topology visualization and interaction
-class Question5 extends JFrame {
+class NetworkTopology extends JFrame {
     private Graph graph = new Graph();  // Graph instance
     private JTextArea outputArea = new JTextArea(10, 40);   // Output text area
     private DrawPanel drawPanel = new DrawPanel();  // Panel for drawing network
 
     private String selectedNode = null;
 
-    Question5() {
+    NetworkTopology() {
         setTitle("Network Topology Optimizer");
         setSize(800, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -304,6 +304,6 @@ class Question5 extends JFrame {
 
     // Main function to run the GUI
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(Question5::new);
+        SwingUtilities.invokeLater(NetworkTopology::new);
     }
 }
